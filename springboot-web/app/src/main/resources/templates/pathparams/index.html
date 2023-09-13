@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${titulo}"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<h1 class="color-rojo" th:text="${titulo}"></h1>
+<h2 class="color-azul" th:text="${titulo}">Decorando con CSS</h2>
+<div>
+    <img th:src="@{/images/catt.png}"/>
+</div>
+<ul>
+    <li>
+        <a th:href="@{/v1/path-params/params1/OGY/42069}">Ver parámetros dobles</a>
+    </li>
+    <li>
+        <a th:href="@{/v1/path-params/params1/OGY}">Ver parámetro simple</a>
+    </li>
+</ul>
+</body>
+</html>
